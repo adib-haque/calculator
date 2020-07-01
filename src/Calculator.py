@@ -56,6 +56,6 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-    def sqrt(self, a, b):
+    def sqrt(self, a):
         self.result = srt(a)
         return self.result
