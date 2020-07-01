@@ -14,7 +14,7 @@ def multiplication(a, b):
 
 
 def division(a, b):
-    if int(b) is not 0:
+    if b != 0:
         return float(a) / float(b)
     else:
         return 'Error, Divisor b cannot be 0'
