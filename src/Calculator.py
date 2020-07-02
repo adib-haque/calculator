@@ -2,22 +2,22 @@ import math
 
 
 def addition(a, b):
-    return float(a) + float(b)
+    return int(a) + int(b)
 
 
 def subtraction(a, b):
-    return float(a) - float(b)
+    return int(a) - int(b)
 
 
 def multiplication(a, b):
-    return float(a) * float(b)
+    return int(a) * int(b)
 
 
 def division(a, b):
-    if b != 0:
-        return float(a) / float(b)
+    if a != 0:
+        return float(b) / float(a)
     else:
-        return 'Error, Divisor b cannot be 0'
+        return 'Error, Divisor a cannot be 0'
 
 
 def square(a):
