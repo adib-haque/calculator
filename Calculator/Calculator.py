@@ -1,5 +1,9 @@
-import math
-
+from Calculator.Addition import addition
+from Calculator.Subtraction import subtraction
+from Calculator.Multiplication import multiplication
+from Calculator.Division import division
+from Calculator.Square import square
+from Calculator.SquareRoot import sq_rt
 
 
 class Calculator:
@@ -28,6 +32,6 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-    def sqrt(self, a):
-        self.result = srt(a)
+    def sq_rt(self, a):
+        self.result = sq_rt(a)
         return self.result
