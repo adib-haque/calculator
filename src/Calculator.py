@@ -1,34 +1,6 @@
 import math
 
 
-def addition(a, b):
-    return int(a) + int(b)
-
-
-def subtraction(a, b):
-    return int(a) - int(b)
-
-
-def multiplication(a, b):
-    return int(a) * int(b)
-
-
-def division(a, b):
-    if a != 0:
-        return float(b) / float(a)
-    else:
-        return 'Error, Divisor a cannot be 0'
-
-
-def square(a):
-    a = int(a)
-    return math.pow(a, 2)
-
-
-def srt(a):
-    a = float(a)
-    return math.sqrt(a)
-
 
 class Calculator:
     result = 0
