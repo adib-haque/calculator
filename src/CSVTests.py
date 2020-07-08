@@ -1,5 +1,5 @@
 import unittest
-from CSVReader import CsvReader, class_factory
+from CsvReader.CSVReader import CsvReader, class_factory
 from pprint import pprint
 
 
