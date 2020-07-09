@@ -1,5 +1,5 @@
 import unittest
-from Calculator import Calculator
+from Calculator.Calculator import Calculator
 from CsvReader.CSVReader import CsvReader
 from pprint import pprint
 
@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/square.csv").data
         pprint(test_data)
         for row in test_data:
-            self.assertEqual(self.calculator.sqr(row['Value 1']))
+            self.assertEqual(self.calculator.sqr(int(row['Value 1'])), int(row['Result']))
             self.assertEqual(self.calculator.result, float(row['Result']))
         test_data.clear()
 
@@ -56,8 +56,8 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/sq_rt.csv").data
         pprint(test_data)
         for row in test_data:
-            self.assertEqual(self.calculator.sqrt(row['Value 1']))
-            self.assertEqual(self.calculator.result, float(row['Result']))
+            self.assertEqual(self.calculator.sq_rt(int(row['Value 1'])), float(row['Result']), places=4)
+            self.assertEqual(self.calculator.result, float(row['Result']), places=4)
         test_data.clear()
 
     def test_results_property_calculator(self):
