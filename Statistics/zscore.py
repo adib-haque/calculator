@@ -14,4 +14,3 @@ def z_score(num):
     y = subtraction(nd, z_mean)
     z = division(pop_std, y)
     return z
-

@@ -8,4 +8,3 @@ def population_mean(data):
     for numbers in data:
         total = addition(total, numbers)
     return round(division(numbers, total), 8)
-
