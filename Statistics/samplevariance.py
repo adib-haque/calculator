@@ -1,3 +1,10 @@
+from Statistics.samplemean import sampleMean
+from Statistics.Proportion import proportion
+from Calculator.Subtraction import subtraction
+from Calculator.Division import division
+from Calculator.Multiplication import multiplication
+
+
 def var_sample_proportion(data):
     sample_data = data[0:999]
     samp_prop_data = []
