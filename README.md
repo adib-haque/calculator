@@ -105,6 +105,8 @@ Adib and Marlon worked in person for a great amount of the project. The contribu
 
 Please see below for sample view of github commits. Since we are talking statistics, why not use a sample to demonstrate! 
 
+![github-medium](https://github.com/msarkor/calculator/blob/master/GitLogs.jpg?raw=true)
+
 
 
 
