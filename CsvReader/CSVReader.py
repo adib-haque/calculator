@@ -1,9 +1,9 @@
 import csv
-from pathlib import Path
+import sys
 from Fileutilities.absolutepath import abspath
 
 
-def class_factory(class_name, dictionary):
+def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
 
@@ -12,16 +12,20 @@ class CsvReader:
 
     def __init__(self, filepath):
         self.data = []
-        relative = Path(filepath)
-        absolute = relative.absolute()
-        with open(absolute) as text_data:
-            csv_data = csv.DictReader(text_data, delimiter=',')
+
+        try:
+            file = open(abspath(filepath))
+        except OSError:
+            print("Error: could not read file", filepath)
+            sys.exit()
+
+        with file:
+            csv_data = csv.DictReader(file, delimiter=',')
             for row in csv_data:
                 self.data.append(row)
-        pass
 
     def return_data_as_objects(self, class_name):
         objects = []
         for row in self.data:
-            objects.append(class_factory(class_name, row))
+            objects.append(ClassFactory(class_name, row))
         return objects
