@@ -3,7 +3,7 @@ import sys
 from Fileutilities.absolutepath import abspath
 
 
-def ClassFactory(class_name, dictionary):
+def class_factory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
 
