@@ -1,2 +1,2 @@
 def mode(num):
-    return round(max(set(data), key=num.count), 1)
+    return int(max(num, key=num.count))
