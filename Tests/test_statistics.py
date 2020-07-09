@@ -52,7 +52,7 @@ class MyTestCase(unittest.TestCase):
         answers = CsvReader("Tests/Data/answers.csv").data
         values = Data(test_data, "value")
         for column in answers:
-            self.assertEqual(self.statistics.z_score(values), float((column['z_score'])))
+            self.assertEqual(self.statistics.z_score(values), float((column['zscore'])))
 
     def test_sample_variance(self):
         test_data = CsvReader("/Tests/Data/randomdata.csv")
