@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/subtraction.csv").data
         pprint(test_data)
         for row in test_data:
-            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), float(row['Result']))
+            self.assertEqual(self.calculator.subtract(int(row['Value 2']), int(row['Value 1'])), int(row['Result']))
             self.assertEqual(self.calculator.result, float(row['Result']))
         test_data.clear()
 
