@@ -16,6 +16,13 @@ from Statistics.variancepopulationproportion import var_pop_proportion
 from Statistics.zscore import z_score
 
 
+class Statistics(Calculator):
+    data = []
+
+    def __init__(self):
+        super().__init__()
+        self.data = CsvReader
+        pass
 
     def conf_interval(self, a):
         self.result = confidence_interval(a)
