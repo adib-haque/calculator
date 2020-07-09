@@ -1,5 +1,6 @@
 from Statistics.zscore import z_score
 
+
 def p_value(data):
     test = []
     z_score_test_result = []
