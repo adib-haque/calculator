@@ -101,9 +101,11 @@ Statistics (THE GOLD): This holds all needed attributes supporting the different
 ![github-medium](https://online.stanford.edu/sites/default/files/styles/figure_default/public/2018-08/introduction-to-probability-and-statistics-for-epidemiology_HRP259.jpg?itok=hu6PM2ZF)
 
 Tasks Lists:
-Adib and Marlon worked in person for a great amount of the project. The contributions reflect collaborative efforts. 
+Adib and Marlon worked in person for a great amount of the project. The contributions reflect collaborative efforts throughout the project.
 
 Please see below for sample view of github commits. Since we are talking statistics, why not use a sample to demonstrate! 
+
+![github-medium](https://github.com/msarkor/calculator/blob/master/GitLogs.jpg?raw=true)
 
 
 
