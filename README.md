@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Ash33njit/calculator.svg?branch=master)](https://travis-ci.com/Ash33njit/calculator)
+
 Stats Calculator Project
 
 Authors: Adib Haque & Marlon Sarkor
