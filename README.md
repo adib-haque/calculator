@@ -43,7 +43,7 @@ Source: en.wikipedia.org
 
 Tasks Lists:
 Adib and Marlon worked in person for a great amount of the project. The contributions reflect collaborative efforts. 
-![github-medium]()
+
 
 
 
