@@ -1,0 +1,16 @@
+def confidence_interval(data):
+    # For a Confidence Interval of 95%
+    z_value = 1.960
+    mean = population_mean(data)
+    sd = pop_stand_dev(data)
+    x = len(data)
+    y = division(square_root(x), sd)
+    margin_of_error = multiplication(z_value, y)
+    a = [subtraction(mean, margin_of_error)]
+    b = [addition(mean, margin_of_error)]
+    size = len(a)
+    # c = [(a[i], b[i]) for i in range(size)]
+    lower = a[0]
+    upper = b[0]
+    # print(lower, upper)
+    return lower, upper
